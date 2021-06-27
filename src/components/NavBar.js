@@ -1,7 +1,4 @@
 import '../styles/NavBar.css'
-import { useState } from 'react'
-import Menu from './Menu'
-import {Link} from "react-router-dom";
 import magnifyingGlass from '../assets/svg/magnifyingGlass.svg'
 import cart from '../assets/svg/cart.svg'
 import profile from '../assets/svg/profile.svg'

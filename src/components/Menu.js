@@ -6,7 +6,6 @@ function Menu({ menuIsOpen, setMenuIsOpen}) {
     
     const [menSectionIsOpen, setMenSectionIsOpen] = useState(false)
     const [womenSectionIsOpen, setWomenSectionIsOpen] = useState(false)
-    const [promoSectionIsOpen, setPromoSectionIsOpen] = useState(false)
 
     return menuIsOpen ? (
         <div id='menu' style={{ transform: 'translateX(0%)'}}>

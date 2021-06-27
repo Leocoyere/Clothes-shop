@@ -52,6 +52,7 @@
 #details > p {
     font-size: 14px;
     font-family: "Poppins";
+    line-height: 17px;
 }
 
 #details > #price {
