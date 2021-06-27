@@ -9,7 +9,7 @@ function NavBar({ shoppingCart, setShoppingCart, menuIsOpen, setMenuIsOpen }) {
         <div id="banner">
             <div id="navbar">
                 <div id="burger" onClick={() => setMenuIsOpen(false)}></div>
-                <a href='/home' id="logo">BRAND.</a>
+                <a href='/' id="logo">BRAND.</a>
                 <div id="others">
                     <img src={magnifyingGlass} alt='Magnifying glass icon'></img>
                     <img src={profile} alt='Profile icon'></img>
@@ -21,7 +21,7 @@ function NavBar({ shoppingCart, setShoppingCart, menuIsOpen, setMenuIsOpen }) {
         <div id="banner">
             <div id="navbar">
                 <div id="burger" onClick={() => setMenuIsOpen(true)}></div>
-                <a href='/home' id="logo">BRAND.</a>
+                <a href='/' id="logo">BRAND.</a>
                 <div id="others">
                     <img src={magnifyingGlass} alt='Magnifying glass icon'></img>
                     <img src={profile} alt='Profile icon'></img>
