@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+#banner {
+    width: 100%;
+    padding: 0 100px;
+    box-sizing: border-box;
+    height: 100px;
+    position: fixed;
+    z-index: 50;
+}
+
+#navbar {
+    z-index: 30;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#logo {
+    text-align: center;
+    width: 160px;
+    text-decoration: none;
+    color: #000;
+    font-family: "Poppins";
+    font-size: 24px;
+}
+
+#burger {
+    position: relative;
+    width: 160px;
+    height: 8px;
+}
+
+#burger::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+}
+
+#burger::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+}
+
+#others {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 30%;
+}
+
+#others > * {
+    margin: 0 10px;
+    width: auto;
+    height: 100%;
+}
+
+#shoppingCart {
+    width: auto;
+    height: 100%;
+    position: relative;
+}
+
+#shoppingCart > div {
+    font-family: "Bebas Neue";
+    font-size: 16px;
+    position: absolute;
+    right: -5px;
+    top: -7px;
+}
+
+#shoppingCart > img {
+    width: auto;
+    height: 100%;
+}

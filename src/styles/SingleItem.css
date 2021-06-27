@@ -1,0 +1,105 @@
+#container {
+    display: grid;
+    grid-template-columns: 200px 350px 1fr;
+    grid-template-rows: 80vh;
+    grid-gap: 80px;
+    padding: 150px 100px 100px 100px;
+}
+
+#image-list {
+    margin: auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-rows: auto;
+    overflow: hidden;
+}
+
+#image-list > #currentImage {
+    opacity: 50%;
+}
+
+#image-list > img {
+    width: 100%;
+}
+
+#image-single {
+    height: 100%;
+    width: auto;
+}
+
+#image-single > img {
+    height: 100%;
+    width: 100%;
+}
+
+#details {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#details > *:not(:nth-child(1)) {
+    margin-top: 30px;
+}
+
+#details > h1 {
+    font-size: 20px;
+    font-family: "Oswald";
+}
+
+#details > p {
+    font-size: 14px;
+    font-family: "Poppins";
+}
+
+#details > #price {
+    font-family: 'Oswald';
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+#details > #sizes {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: auto;    
+    font-size: 18px;
+    font-family: "Poppins";
+}
+
+#details > #sizes > li {
+    margin-right: 30px;
+    opacity: 20%;
+    cursor: pointer;
+}
+
+#details > #color > span {
+    font-size: 14px;
+    font-family: "Poppins";
+}
+
+#details > #color > span > em {
+    font-size: 13px;
+    font-family: "Poppins";
+}
+
+#details > button {
+    font-size: 14px;
+    font-family: "Poppins";
+    background-color: transparent;
+    border: transparent 1px solid;
+    width: auto;
+}
+
+#details > button:hover {
+    color: #fff;
+    background-color: #000;
+    border: black 1px solid;
+}
+
+#details > #sizes > #itemCurrentSize {
+    opacity: 100%;
+}
