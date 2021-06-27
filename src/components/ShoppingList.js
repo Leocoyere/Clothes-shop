@@ -20,6 +20,7 @@ function ShoppingList({ shoppingCart, setShoppingCart, menuIsOpen, setMenuIsOpen
 
     useEffect(() => {
         setMenuIsOpen(false)
+        console.log(currentGender)
     }, [])
 
     function reloadPage() {
@@ -34,7 +35,7 @@ function ShoppingList({ shoppingCart, setShoppingCart, menuIsOpen, setMenuIsOpen
 
     const ItemCategories = ItemList.reduce(
 		(acc, item) =>
-			acc.includes(item.category) ? acc : (currentType === item.type && gender === currentGender ? acc.concat(item.category) : acc),
+			acc.includes(item.category) ? acc : (currentType === item.type && item.gender === currentGender ? acc.concat(item.category) : acc),
 		[]
 	)
     
